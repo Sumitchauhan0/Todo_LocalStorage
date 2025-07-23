@@ -1,12 +1,35 @@
-# React + Vite
+# Todo Local Storage React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React Todo app that saves todos in the browser’s local storage.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Core Todo Functionality
+- **Add Todo:** Quickly add new tasks with a simple input form.
+- **Edit Todo:** Modify existing todo text inline with easy toggle between view and edit mode.
+- **Delete Todo:** Remove unwanted todos with a confirmation popup to prevent accidental deletion.
+- **Toggle Completion:** Mark todos as completed or incomplete via a checkbox.
+- **Persist Todos:** Automatically save and load todos from browser's local storage, so your list is saved across page refreshes.
 
-## Expanding the ESLint configuration
+### User Interface & Experience
+- **Responsive UI:** Works well on desktop and mobile screens with fluid layouts.
+- **Theme Toggle:** Switch between light and dark modes seamlessly with a stylish toggle button.
+- **Visual Feedback:** Completed todos show a distinct style (e.g., strikethrough, background color) for clarity.
+- **Accessible:** Proper keyboard focus management and semantic HTML for screen reader compatibility.
+- **Smooth Transitions:** Subtle animations for editing, toggling, and theme switching enhance user experience.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Data & State Management
+- **Context API:** Uses React Context to share todos and operations (add, update, delete, toggle) across components.
+- **State Synchronization:** Keeps UI state and local storage perfectly in sync with React state hooks.
+- **Unique IDs:** Each todo has a unique timestamp-based ID to avoid clashes.
+
+### Additional Functionalities
+- **Confirmation Modals:** User-friendly modal dialogs for confirming deletion and saving edits.
+- **Error Handling:** Prevents adding empty todos and handles edge cases gracefully.
+- **Performance:** Efficient rendering with React best practices to avoid unnecessary re-renders.
+
+## Getting Started
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/Sumitchauhan0/Todo_LocalStorage.git
